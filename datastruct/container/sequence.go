@@ -15,10 +15,10 @@ type Sequence[T any] interface {
 	// index should be scoped in [0,size).
 	Erase(index int)
 	// Front return the first element in vector
-	// container should not be empty.
+	// container must not be empty.
 	Front() T
 	// Back return the last element in vector.
-	// container should not be empty.
+	// container must not be empty.
 	Back() T
 	// PushBack add element x at the end of container
 	PushBack(value T)
